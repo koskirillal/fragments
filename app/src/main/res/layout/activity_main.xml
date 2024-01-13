@@ -6,60 +6,53 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-
-    <TextView
-        android:id="@+id/tv_happiness"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="Happiness: 100"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_population"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="Population: 100"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/tv_money"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:text="Money: 100"
-        android:textSize="20sp" />
-
-
-    <TextView
-        android:id="@+id/tv_situation"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:textSize="25sp"
-        tools:text="Some text" />
-
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:name="ru.t1murcoder.textquest.fragment.FirstFragment"
+        android:tag="unique_tag"
+        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp">
-
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_first"
+            android:id="@+id/btn_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#4CAF50"
-            android:text="Да"
-            android:textSize="40sp" />
-
+            android:text="@string/_1"
+            android:textSize="25dp"
+            android:layout_margin="8dp"
+            />
         <Button
-            android:id="@+id/btn_second"
+            android:id="@+id/btn_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#D32F2F"
-            android:text="Нет"
-            android:textSize="40sp" />
+            android:text="@string/_2"
+            android:textSize="25dp"
+            android:layout_margin="8dp"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_3"
+            android:textSize="25dp"
+            android:layout_margin="8dp"/>
+
+
+
     </LinearLayout>
+
+
+
+
+
+
+
 </LinearLayout>
